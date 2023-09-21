@@ -261,3 +261,41 @@ tbody tr td, tbody tr th {
 tbody, td, tfoot, th, thead, tr {
     border-width: 1px;
 }
+
+/** Footer */
+.footer {
+    background-color: var(--dark-gray2);
+    color: var(--light);
+    padding: 20px 0;
+}
+
+.footer h4 {
+    color: var(--dark-tomato);
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer a {
+    color: var(--middle-gray);
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
