@@ -265,6 +265,7 @@ tbody, td, tfoot, th, thead, tr {
 /** Footer */
 .footer {
     background-color: var(--dark-gray2);
+    border-radius: var(--radius);
     color: var(--light);
     padding: 20px 0;
 }
@@ -274,16 +275,19 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .footer p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .footer a {
     color: var(--middle-gray);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .footer a:hover {
-    text-decoration: none;
+    text-decoration: underline 2px;
+    
+    color: rgb(167, 217, 248);
+    font-weight: 500;
 }
 
 .footer .container {
@@ -296,6 +300,22 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
+.footer .bi {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+
+}
+
+/** Flecha a Home */
+.go-up{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: right;
+}
+
+.go-up .bi{
+    color: var(--dark-tomato);
+}
