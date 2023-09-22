@@ -20,12 +20,12 @@
         <header id="home">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand p-2 mb-2" href="#">
                         <img 
                             src="./assets/img/logo-pizza.webp" 
-                            alt="logo de pizzeria" width="80" 
-                            height="80"
-                            class="d-inline-block align-text-top d-none" 
+                            alt="logo de pizzeria" width="100" 
+                            height="100"
+                            class="d-inline-block align-text-top d-none d-md-block" 
                         />
                     </a>
                     <h1>Mis Recetas</h1>
@@ -41,11 +41,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" href="#about">Acerca de ...</a>
+                            <a class="nav-link" href="#about">Inicio</a>
                             <a class="nav-link" href="#ingredients">Ingredientes</a>
                             <a class="nav-link" href="#steps">Paso a Paso</a>
                             <a class="nav-link" href="#nutrition">Valor Nutricional</a>
-                            <a class="nav-link" href="./pages/contact.html">Contactame</a>
+                            <a class="nav-link" href="./pages/contact.html">Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -57,65 +57,58 @@
             <section id="about" class="container-lg flex-column flex-wrap justify-content-center">
                 <h2>Pizza Cuatro Estaciones</h2>
                 <article class="article-about py-2 bground-about">
-                    <P>
+                    <p>
                         <span>L</span>a pizza es una de las comidas más
                         nobles, sabrosas y versátiles que la gastronomía
                         italiana nos ha regalado. Por eso hoy, en Mis Recetas,
                         vamos a preparar juntos la clásica e increíble Pizza
                         4 estaciones.
-                        <a 
-                            href="#" 
-                            type="button"
-                            class="anchor-class" 
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" 
-                            aria-expanded="false" 
-                            aria-controls="collapseExample">
-                            more...
-                        </a>
-                        <div class="collapse" id="collapseExample">
-                            <p>
-                                Esta receta definitiva no falla, pero además,
-                                siguiendo este paso a paso súper fácil y lleno de
-                                tips y secretos, te garantizamos que siempre van a
-                                salirte crocantes y gustosas.
-                            </p>
-                            <p>
-                                Pero, ¿sabías que la pizza napolitana se remonta al
-                                siglo XVII? ¡Tremendo! Es originaria de la región de
-                                Nápoles, y hoy en día ya se ha convertido en clásico
-                                de la comida italiana. Tanto que es considerada por
-                                muchos como la mejor pizza del mundo. Su
-                                característica principal es su masa delgada y
-                                crujiente, que se cuece en horno bien fuerte para
-                                conseguir una base perfecta.
-                            </p>
-                            <p>
-                                Y porque literalmente no existe ni una pizza en este
-                                mundo que no sea RIQUÍSIMA, vamos a ponerla a prueba
-                                no con una, ni dos, sino con ONCE ideas de toppings
-                                para que hagas las que más te gusten (¡y para
-                                tentarte a que prepares variedades que nunca hayas
-                                probado!)
-                            </p>
-                            <p>
-                                Y como si todo esto fuera poco, esta receta es ideal
-                                no sólo para hacer en grandes cantidades y
-                                freezarlas para y así tener pizzas caseras siempre a
-                                mano, sino que son un planazo de domingo con amigos
-                                o para hacer tu propio pizza party.
-                            </p>
-                            <p>
-                                Ahora sí, a poner las manos en la masa y a cocinar
-                                las mejores pizza cuatro estaciones del planeta.
-                            </p>
-                        </div>
-                    </P>
+                    </p>
+                    <a href="#" class="d-md-none anchor-class text-end" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        mas...
+                    </a>
+                    <div class="collapse d-md-block" id="collapseExample">
+                        <p>
+                            Esta receta definitiva no falla, pero además,
+                            siguiendo este paso a paso súper fácil y lleno de
+                            tips y secretos, te garantizamos que siempre van a
+                            salirte crocantes y gustosas.
+                        </p>
+                        <p>
+                            Pero, ¿sabías que la pizza napolitana se remonta al
+                            siglo XVII? ¡Tremendo! Es originaria de la región de
+                            Nápoles, y hoy en día ya se ha convertido en clásico
+                            de la comida italiana. Tanto que es considerada por
+                            muchos como la mejor pizza del mundo. Su
+                            característica principal es su masa delgada y
+                            crujiente, que se cuece en horno bien fuerte para
+                            conseguir una base perfecta.
+                        </p>
+                        <p>
+                            Y porque literalmente no existe ni una pizza en este
+                            mundo que no sea RIQUÍSIMA, vamos a ponerla a prueba
+                            no con una, ni dos, sino con ONCE ideas de toppings
+                            para que hagas las que más te gusten (¡y para
+                            tentarte a que prepares variedades que nunca hayas
+                            probado!)
+                        </p>
+                        <p>
+                            Y como si todo esto fuera poco, esta receta es ideal
+                            no sólo para hacer en grandes cantidades y
+                            freezarlas para y así tener pizzas caseras siempre a
+                            mano, sino que son un planazo de domingo con amigos
+                            o para hacer tu propio pizza party.
+                        </p>
+                        <p>
+                            Ahora sí, a poner las manos en la masa y a cocinar
+                            las mejores pizza cuatro estaciones del planeta.
+                        </p>
+                    </div>
                 </article>
             </section>
 
             <!-- Section Ingredients -->
-            <section id="ingredients" class="d-flex flex-column flex-wrap justify-content-center">
+            <section id="ingredients" class="container-lg flex-column flex-wrap justify-content-center">
                 <h2>Tips de Pizzas e Ingredientes</h2>
                 <article class="container-lg article-ingredients">
                     <div class="row row-cols-3 align-items-center justify-content-center">
@@ -140,7 +133,7 @@
                         >
                             <figure class="item">
                                 <img src="./assets/img/dificultad.png" alt="dificultad">
-                            <figcaption>Dif. Media</figcaption>
+                            <figcaption>Dific. Media</figcaption>
                             </figure>
                         </div>
                         <div 
@@ -156,195 +149,67 @@
                             </figure>
                         </div>
                     </div>
-
-                    
-                    <div class="container-lg list-content mt-3 p-2 d-none">
-                        <div>
-                            <h3>Muzzarella</h3>
-                            <ul>
-                                <li>
-                                    Pre-pizza precocidas (las que vayas a preparar)
-                                </li>
-                                <li>
-                                    100 gramos de mozzarella en hebras (por cada pre-pizza)
-                                </li>
-                                <li>
-                                    Sal a gusto
-                                </li>
-                                <li>
-                                    Pimienta a gusto
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Margarita</h3>
-                            <ul>
-                                <li>
-                                    Albahaca fresca</li>
-                                <li>
-                                    1 chorro de aceite de oliva
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Hawaiana</h3>
-                            <ul>
-                                <li>
-                                    Panceta</li>
-                                <li>
-                                    Ananá en lata
-                                </li>
-                                <li>
-                                    Cerezas (opcional)
-                                </li>
-                                <li>
-                                    Duraznos en lata (opcional)
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Vegetariana</h3>
-                            <ul>
-                                <li>
-                                    Champignones
-                                </li>
-                                <li>
-                                    Cebolla
-                                </li>
-                                <li>
-                                    Morrón rojo
-                                </li>
-                                <li>
-                                    Aceitunas verdes o negras
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Española</h3>
-                            <ul>
-                                <li>
-                                    Tomate
-                                </li>
-                                <li>
-                                    Cebolla
-                                </li>
-                                <li>
-                                    Aceitunas negras
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Full Meat</h3>
-                            <ul>
-                                <li>
-                                    50 gramos de carne de vaca en tiras
-                                </li>
-                                <li>
-                                    50 gramos de pollo entero cortado en tiras
-                                </li>
-                                <li>
-                                    50 gramos de jamón cocido feteado
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Anchoas</h3>
-                            <ul>
-                                <li>
-                                    Anchoas
-                                </li>
-                                <li>
-                                    Aceitunas verdes
-                                </li>
-                                <li>
-                                    Morrón rojo cortado en tiras
-                                </li>
-                                <li>
-                                    Aceite de oliva
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Criolla</h3>
-                            <ul>
-                                <li>
-                                    50 gramos de carne de vaca en tiras
-                                </li>
-                                <li>
-                                    Morrón rojo cortado en tiras
-                                </li>
-                                <li>
-                                    Aceitunas verdes
-                                </li>
-                                <li>
-                                    Aceite de oliva
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Argentina</h3>
-                            <ul>
-                                <li>
-                                    100 gramos carne de vaca en tiras
-                                </li>
-                                <li>
-                                    Orégano
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Napolitana</h3>
-                            <ul>
-                                <li>
-                                    Aceite de oliva
-                                </li>
-                                <li>
-                                    Orégano
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Americana</h3>
-                            <ul>
-                                <li>
-                                    Panceta ahumada
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Italiana</h3>
-                            <ul>
-                                <li>
-                                    4 rodajas de salame
-                                <li>
-                                    Morrón rojo cortado en tiras
-                                </li>
-                                <li>
-                                    Queso parmesano
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </article>
                 <div>
             </section>
 
             <!-- Section Steps -->
-            <section id="steps" class="d-flex flex-column flex-wrap justify-content-center">
+            <section id="steps" class="container-lg d-flex flex-column flex-wrap justify-content-center">
                 <h2>Paso a Paso</h2>
                 <article class="container-lg article-steps">
                     <!-- para local mejor video - p/enlaces externos iframe -->
-                    <video 
-                        src="./assets/video/Como hacer una Pizza Cuatro Estaciones.mp4" 
-                        controls
-                        poster="./assets//img/banner-pizzas.jpeg" 
-                        class="video object-fit-contain border rounded"
-                    >
-                        Your browser does not support HTML5 video.
-                    </video>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 d-none d-md-block">
+                                <aside>
+                                    <div>
+                                        <h3>Muzzarella</h3>
+                                        <ul>
+                                            <li>
+                                                Pre-pizza precocidas (las que vayas a preparar)
+                                            </li>
+                                            <li>
+                                                100 gramos de mozzarella en hebras (por cada pre-pizza)
+                                            </li>
+                                            <li>
+                                                Sal a gusto
+                                            </li>
+                                            <li>
+                                                Pimienta a gusto
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3>Margarita</h3>
+                                        <ul>
+                                            <li>
+                                                Albahaca fresca</li>
+                                            <li>
+                                                1 chorro de aceite de oliva
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video 
+                                            src="./assets/video/Como hacer una Pizza Cuatro Estaciones.mp4" 
+                                            controls
+                                            poster="./assets//img/masa-para-pizza-casera.jpg" 
+                                            class="video object-fit-cover border rounded"
+                                        >
+                                            Your browser does not support HTML5 video.
+                                    </video>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
 
                     <div class="container-lg list-steps pt-2">
-                        <h2>Distintos Top Tips</h2>
+                        <h4>Distintos Top Tips</h4>
                             <div class="row row-cols-1 row-cols-md-3 cols-lg-3 g-4 justify-content-center">
                                 <div class="col ">
                                     <div class="card h-100">
@@ -496,14 +361,13 @@
             </section>
 
             <!-- Section Table -->
-            <section id="nutrition" class="d-flex flex-column flex-wrap justify-content-center">
+            <section id="nutrition" class="container-lg d-flex flex-column flex-wrap justify-content-center">
                 <h2>Informacion Nutricional</h2>
-                <article class="container-lg article-table">
+                <article class="article-table">
                     <table class="table caption-top table-hover">
-                        <caption>Tamaño de la porcion: 1/4 pizza ~ 100g</caption>
                             <thead>
                                 <tr>
-                                    <th rowspan="2">PIZZAS</th>
+                                    <th rowspan="2">PIZZAS ~ 100g</th>
                                     <th colspan="3">ENERGIA - NUTRIENTES</th>
                                 </tr>
                                 <tr>

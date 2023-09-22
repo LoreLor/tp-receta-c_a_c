@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:ital,wght@1,100;1,400&display=swap');
 
 :root {
     --dark-gray: rgb(43, 45, 66);
@@ -16,6 +17,7 @@
     --font: Verdana, Geneva, Tahoma, sans-serif;
     --bs-card-color:rgb(95, 92, 92);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +25,10 @@
 
 body {
     box-sizing: border-box;
-    background-color:var(--light-tomato) ;
+    background-color: var(--light-tomato);
 }
+
+
 
 a{
     text-decoration: none;
@@ -43,12 +47,17 @@ header nav div a img{
     border-radius: var(--radius);
     box-shadow: -10px 10px 10px var(--dark-gray2);
     display: none;
+    transition: var(--transition);
+}
+
+header nav div a img:hover{
+    transform: scale(1.08);
 }
 
 header nav div h1 {
     color: var(--light);
     font-size: 1.3rem;
-    font-family: var(--font);
+    font-family: 'Croissant One', cursive !important;
     text-align: center;
 }
 
@@ -64,8 +73,10 @@ header nav div h1 {
     font-weight: 600;
 }
 
-.nav-link:hover{
-    color: var(--dark-gray)
+.nav-link:hover, 
+.card-footer a:hover{
+    color: var(--dark-gray2) !important;
+    text-decoration: underline;
 }
 
 /** Section About */
@@ -78,7 +89,16 @@ header nav div h1 {
     padding-top: 2rem;
     padding: 1rem 0rem ;
     font-family: cursive;
-    color: var(--font-color);
+    color: var(--dark-gray2);
+    font-size: 1.2rem;
+}
+
+.article-steps h4{
+    text-align: center;
+    padding-top: 2rem;
+    padding: 1rem 0rem ;
+    font-family: cursive;
+    color: var(--dark-gray2);
     font-size: 1.2rem;
 }
 
@@ -88,9 +108,11 @@ header nav div h1 {
 }
 
 .article-about span{
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 700;
     color: var(--dark-tomato);
+    padding-right: 2px;
+    font-family: cursive;
 }
 
 .article-about p{
@@ -115,6 +137,7 @@ header nav div h1 {
     color: var(--dark-tomato);
     font-size: 1.2rem;
     font-family: cursive;
+    margin-left: 4rem;
 }
 
 .anchor-class:hover{
@@ -139,7 +162,7 @@ header nav div h1 {
 .item > img{
     height: 2rem;
     width: 2rem;
-    padding:0.1rem 0.1rem;
+    padding:0.2rem 0.1rem;
     object-fit: contain;
 }
 
@@ -201,7 +224,6 @@ header nav div h1 {
 }
 
 .card:hover{
-    background: radial-gradient(#f80fe542, #f1edf038);
     transform: scale(1.05);
 }
 
@@ -231,6 +253,7 @@ header nav div h1 {
 /** Section Nutrition */
 table{
     width: 100%;
+    z-index:2;
 }
 
 thead tr th{
@@ -323,4 +346,60 @@ tbody, td, tfoot, th, thead, tr {
 
 .go-up .bi{
     color: var(--dark-tomato);
+}
+
+
+/** Media Queries */
+@media (min-width: 768px){
+    body {
+        background-image:linear-gradient(#bfb6ee34, #f324625b), url('../assets/img/fondo-body3.webp'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+    /**Header - Nav */
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    header nav div h1 {
+        font-size: 2.1rem;
+        font-family: var(--font);
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+    
+    .navbar-nav .nav-link{
+        color: var(--light);
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+
+    /** Sections */
+    #about h2, 
+    #ingredients h2, 
+    #steps h2,
+    #nutrition h2,
+    #contact h2 {  
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 2rem 0rem;
+        color: var(--light);
+        font-size: 1.6rem;
+        background-color: rgba(12, 2, 41, 0.527);
+    }
+
+    .article-about p{    
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem ;
+    }
+
+    .item > img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    
+
 }
