@@ -11,7 +11,7 @@
     --dark-tomato: rgba(217, 4, 39, 0.937);
     --light-tomato:rgba(241, 108, 131, 0.089);
     --font-color: rgb(95, 92, 92);
-    --transition: all 1s ease-in;
+    --transition: all 0.5s ease-in;
     --radius: 8px;
     --semi-radius: 0px 0px 8px 8px;
     --font: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,8 +26,6 @@
 body {
     box-sizing: border-box;
     background-color: var(--light-tomato);
-    background: radial-gradient(rgba(217, 4, 39, 0.336),rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
-    filter: contrast(1.1);
 }
 
 a{
@@ -340,19 +338,27 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 /** Flecha a Home */
-.go-up{
-    font-size: 2.5rem;
+.go-up a{
+    position: fixed;;
     display: flex;
-    justify-content: right;
-}
-
-.go-up .bi{
+    justify-content: end;
+    font-size: 2.5rem;
+    right: 0.5rem;
+    bottom: 0;
     color: var(--dark-tomato);
+    z-index: 1;
 }
 
 
 /** Media Queries */
 @media (min-width: 768px){
+    body {
+        background: radial-gradient(rgba(217, 4, 39, 0.336), rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
+        filter: contrast(1.1);
+        background-attachment: fixed;
+        z-index: 1;
+    }
+
     /**Header - Nav */
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
@@ -402,4 +408,10 @@ tbody, td, tfoot, th, thead, tr {
         font-weight: 600;
         background-color: rgba(41, 2, 9, 0.527);
     }
+   
+    .go-up a{
+        right: 3.5rem;
+        font-size: 3.5rem;
+    }
+
 }
