@@ -349,10 +349,16 @@ tbody, td, tfoot, th, thead, tr {
     z-index: 1;
 }
 
+.go-up a:hover {
+    color: rgb(167, 217, 248);
+}
+
+
 
 /** Media Queries */
 @media (min-width: 768px){
-    body {
+    .background {
+        position: relative;
         background: radial-gradient(rgba(217, 4, 39, 0.336), rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
         filter: contrast(1.1);
         background-attachment: fixed;
@@ -410,8 +416,9 @@ tbody, td, tfoot, th, thead, tr {
     }
    
     .go-up a{
-        right: 3.5rem;
+        right: 3rem;
         font-size: 3.5rem;
+        bottom: 12rem;
     }
 
 }
