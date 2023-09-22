@@ -11,7 +11,7 @@
     --dark-tomato: rgba(217, 4, 39, 0.937);
     --light-tomato:rgba(241, 108, 131, 0.089);
     --font-color: rgb(95, 92, 92);
-    --transition: all 1s ease-in-out;
+    --transition: all 1s ease-in;
     --radius: 8px;
     --semi-radius: 0px 0px 8px 8px;
     --font: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,9 +26,9 @@
 body {
     box-sizing: border-box;
     background-color: var(--light-tomato);
+    background: radial-gradient(rgba(217, 4, 39, 0.336),rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
+    filter: contrast(1.1);
 }
-
-
 
 a{
     text-decoration: none;
@@ -57,7 +57,8 @@ header nav div a img:hover{
 header nav div h1 {
     color: var(--light);
     font-size: 1.3rem;
-    font-family: 'Croissant One', cursive !important;
+    font-family: cursive !important;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -159,6 +160,7 @@ header nav div h1 {
     border-radius: 8px;
     color: var(--dark-tomato);
 }
+
 .item > img{
     height: 2rem;
     width: 2rem;
@@ -276,13 +278,15 @@ tbody tr td, tbody tr th {
 
 .table-hover tbody tr:hover td {
     font-weight: 700;
-    background-color: var(--light-tomato);
-    color: var(--dark-gray);
+    background-color: var(--dark-tomato);
+    color: var(--light);
+    filter: contrast(1.1);
 }
 
 .table-hover tbody tr:hover th{
     background-color: var(--dark-gray2);
-    color: var(--light) !important;
+    color: var(--light) !important ;
+    z-index: 1 !important;
 }
 
 tbody, td, tfoot, th, thead, tr {
@@ -313,7 +317,6 @@ tbody, td, tfoot, th, thead, tr {
 
 .footer a:hover {
     text-decoration: underline 2px;
-    
     color: rgb(167, 217, 248);
     font-weight: 500;
 }
@@ -334,7 +337,6 @@ tbody, td, tfoot, th, thead, tr {
 .footer .bi {
     font-size: 1.8rem;
     padding-top: 0.5rem;
-
 }
 
 /** Flecha a Home */
@@ -351,13 +353,6 @@ tbody, td, tfoot, th, thead, tr {
 
 /** Media Queries */
 @media (min-width: 768px){
-    body {
-        background-image:linear-gradient(#bfb6ee34, #f324625b), url('../assets/img/fondo-body3.webp'); 
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    
-    }
     /**Header - Nav */
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
@@ -384,7 +379,7 @@ tbody, td, tfoot, th, thead, tr {
     #contact h2 {  
         font-size: 1.8rem;
         font-weight: 700;
-        margin: 2rem 0rem;
+        margin: 2.5rem 0rem;
         color: var(--light);
         font-size: 1.6rem;
         background-color: rgba(12, 2, 41, 0.527);
@@ -400,6 +395,16 @@ tbody, td, tfoot, th, thead, tr {
         width: 2.5rem;
     }
 
-    
+    .article-steps h4{
+        font-size: 1.7rem;
+        margin: 2.5rem 0rem;
+        color: var(--light);
+        font-weight: 600;
+        background-color: rgba(41, 2, 9, 0.527);
+    }
+
+
+
+
 
 }
