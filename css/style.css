@@ -30,8 +30,18 @@ body {
     background-color: var(--light-tomato);
 }
 
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 a{
     text-decoration: none;
+}
+
+main{
+    flex-grow: 1;
 }
 
 /** Section Header */
@@ -450,6 +460,5 @@ tbody, td, tfoot, th, thead, tr {
 
     tbody tr td, tbody tr th {
         font-size: 0.9rem !important;
-       
     }
 }
