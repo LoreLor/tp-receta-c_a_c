@@ -10,7 +10,9 @@
     --middle-tomato: rgba(239, 35, 59, 0.624);
     --dark-tomato: rgba(217, 4, 39, 0.937);
     --light-tomato:rgba(241, 108, 131, 0.089);
+    --light-blue: rgba(12, 2, 41, 0.527);
     --font-color: rgb(95, 92, 92);
+    --font-light-color: #EED2D1;
     --transition: all 0.5s ease-in;
     --radius: 8px;
     --semi-radius: 0px 0px 8px 8px;
@@ -92,7 +94,7 @@ header nav div h1 {
     font-size: 1.2rem;
 }
 
-.article-steps h4{
+.article-steps h4, .aside-content a{
     text-align: center;
     padding-top: 2rem;
     padding: 1rem 0rem ;
@@ -203,8 +205,6 @@ header nav div h1 {
 
 
 /** Section Pasos */
-
-
 .video {
     width:100%;
     box-shadow: -2px 2px 2px var(--dark-gray);
@@ -218,7 +218,7 @@ header nav div h1 {
 
 .card {
     box-shadow: -2px 2px 2px var(--dark-gray);
-    transition: var(--transition)
+    transition: var(--transition);
 }
 
 .card:hover{
@@ -244,7 +244,8 @@ header nav div h1 {
 .card-footer a {
     color: var(--light);
     filter: contrast(1.2);
-    font-weight: 600;
+    font-weight: 400;
+    font-family: cursive;
 }
 
 
@@ -306,12 +307,14 @@ tbody, td, tfoot, th, thead, tr {
     font-size: 1rem;
 }
 
-.footer a {
+.footer a, 
+.aside-content a {
     color: var(--middle-gray);
     margin-right: 1rem;
 }
 
-.footer a:hover {
+.footer a:hover, 
+.aside-content a:hover {
     text-decoration: underline 2px;
     color: rgb(167, 217, 248);
     font-weight: 500;
@@ -357,7 +360,7 @@ tbody, td, tfoot, th, thead, tr {
 @media (min-width: 768px){
     .background {
         position: relative;
-        background: radial-gradient(rgba(217, 4, 39, 0.336), rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
+        background: radial-gradient(rgba(217, 4, 39, 0.24), rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
         filter: contrast(1.1);
         background-attachment: fixed;
         z-index: 1;
@@ -392,12 +395,13 @@ tbody, td, tfoot, th, thead, tr {
         margin: 2.5rem 0rem;
         color: var(--light);
         font-size: 1.6rem;
-        background-color: rgba(12, 2, 41, 0.527);
+        background-color: var(--light-blue);
     }
 
     .article-about p{    
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0.8rem 1.5rem ;
+        color: var(--font-light-color);
     }
 
     .item > img{
@@ -414,9 +418,38 @@ tbody, td, tfoot, th, thead, tr {
     }
    
     .go-up a{
-        right: 3rem;
-        font-size: 3.5rem;
-        bottom: 12rem;
+        right: 2rem;
+        font-size: 2.5rem;
+        bottom: 0rem;
     }
 
+    .item > figcaption{
+        font-size: 0.8rem;  
+    }
+
+    .aside-content{
+        background-color: #302925;
+        border-radius: var(--radius);
+        padding: 0.5rem;
+    }
+
+    .aside-content h3{
+        color: var(--light-gray);
+    }
+
+    .aside-content li {
+        font-weight: 300;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        color: var(--font-light-color);
+    }
+
+    thead tr th {
+        font-size: 0.8rem;
+    }
+
+    tbody tr td, tbody tr th {
+        font-size: 0.9rem !important;
+       
+    }
 }
