@@ -300,6 +300,9 @@ tbody, td, tfoot, th, thead, tr {
     border-width: 1px;
 }
 
+/** Contact Form */
+
+
 /** Footer */
 .footer {
     background-color: var(--dark-gray2);
@@ -460,5 +463,34 @@ tbody, td, tfoot, th, thead, tr {
 
     tbody tr td, tbody tr th {
         font-size: 0.9rem !important;
+    }
+
+    /** FForm-contact */
+    
+
+    .form-content{
+        width: 70vw;
+        margin: 10% auto !important;
+        background-color: var(--light-blue);
+        font-weight: 600;
+        font-size: 1.3rem;
+        border-radius: var(--radius) !important;
+    }
+
+    .form-content input,
+    .form-content textarea {
+        border: none !important;
+        border-bottom: 2px solid var(--dark-tomato) !important;
+        border-radius: var(--radius) !important;
+    }
+    
+    .form-content label {
+        color: #F7F3F2;
+    }
+
+    .form-content button {
+        padding: 8px 40px;
+        margin-right: 4rem !important;
+        font-weight: 600;
     }
 }
