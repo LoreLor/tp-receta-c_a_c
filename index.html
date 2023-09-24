@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Personal- css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Mis Recetas</title>
@@ -117,6 +119,7 @@
                             data-bs-toggle="tooltip" 
                             data-bs-placement="top"
                             title="4 PERSONAS"
+                            data-aos="fade-right"
                         >
                             <figure class="item">
                                 <img src="./assets/img/persona.jpeg" alt="personas">
@@ -128,6 +131,7 @@
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="DIFICULTAD MEDIA"
+                            data-aos="fade-down"
                         >
                             <figure class="item">
                                 <img src="./assets/img/dificultad.png" alt="dificultad">
@@ -139,6 +143,7 @@
                             data-bs-toggle="tooltip" 
                             data-bs-placement="top"
                             title="ECONÓMICA"
+                            data-aos="fade-left"
                         >
                             <figure class="item">
                                 <img src="./assets/img/costo.jpeg" alt="costo">
@@ -157,7 +162,7 @@
                     <div class="container-lg">
                         <div class="row align-items-center">
                             <div class="col-md-4 d-none d-md-block">
-                                <aside class="aside-content h-100">
+                                <aside class="aside-content h-100" data-aos="fade-right">
                                     <div>
                                         <h3>Generales</h3>
                                         <ol>
@@ -178,8 +183,7 @@
                                     <div>
                                         <h3>Pizza casera</h3>
                                         <ul>
-                                            <li>
-                                                Pasos en el video</li>
+                                            <li>Pasos en el video</li>
                                             <li>
                                                 <a href="https://cocinerosargentinos.com/pizzas/masa-de-pizza-casera">Otras Caseras</a>
                                             </li>
@@ -187,7 +191,7 @@
                                     </div>
                                 </aside>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8" data-aos="fade-left">
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <video controls src="./assets/video/masa-pizza-casera.mp4" 
                                         class="video object-fit-cover border rounded"
@@ -203,7 +207,7 @@
                     <div class="container-lg d-flex flex-column flex-wrap justify-content-center list-steps pt-2">
                         <h4>Distintos Top Tips</h4>
                             <div class="row row-cols-1 row-cols-md-3 px-2 g-3 justify-content-center">
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3" data-aos="zoom-in-down">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-4-estaciones.jpg" class="card-img-top" alt="Pre pizza dividida en 4">
                                         <div class="card-body">
@@ -221,7 +225,7 @@
                                     </div>
                                 </div>
                 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"   data-aos="zoom-in-up">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-margarita.webp" class="card-img-top" alt="Pizza Margarita">
                                         <div class="card-body">
@@ -239,7 +243,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"   data-aos="zoom-in-down">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-hawaiana.webp" class="card-img-top" alt="Pizza Margarita">
                                         <div class="card-body">
@@ -257,7 +261,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"   data-aos="zoom-in-up">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-vegetariana.jpeg" class="card-img-top" alt="Pizza Margarita">
                                         <div class="card-body">
@@ -275,7 +279,7 @@
                                     </div>
                                 </div>
                                         
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"  data-aos="zoom-in-down">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-española.webp" class="card-img-top" alt="Pizza Española">
                                         <div class="card-body">
@@ -293,7 +297,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"  data-aos="zoom-in-up">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-full-meats.webp" class="card-img-top" alt="Pizza Full Meat">
                                         <div class="card-body">
@@ -311,7 +315,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"  data-aos="zoom-in-down">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-anchoas.jpeg" class="card-img-top" alt="Pizza de Anchoas">
                                         <div class="card-body">
@@ -330,7 +334,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col col-lg-3">
+                                <div class="col col-lg-3"  data-aos="zoom-in-up">
                                     <div class="card h-100">
                                         <img src="./assets/img/pizza-criolla.jpg" class="card-img-top" alt="Pizza Criolla">
                                         <div class="card-body">
@@ -475,6 +479,12 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" 
         crossorigin="anonymous" 
         async>
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        duration: 2000, 
+        });
     </script>
 </body>
 
