@@ -12,7 +12,8 @@
     --light-tomato:rgba(241, 108, 131, 0.089);
     --light-blue: rgba(12, 2, 41, 0.527);
     --font-color: rgb(95, 92, 92);
-    --font-light-color: #EED2D1;
+    --font-light-color: rgb(236, 206, 205);
+    --font-form: rgb(31, 31, 34);
     --transition: all 0.5s ease-in;
     --radius: 8px;
     --semi-radius: 0px 0px 8px 8px;
@@ -194,7 +195,8 @@ header nav div h1 {
     gap: 1rem;
 }
 
-.list-content h3, .list-steps h3 {
+.list-content h3, 
+.list-steps h3 {
     color: var(--dark-tomato);
     font-family: var(--font);
     font-size: 0.9rem;
@@ -297,8 +299,27 @@ tbody, td, tfoot, th, thead, tr {
     border-width: 1px;
 }
 
+/** Contact */
+.map-content .map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius);
+    box-shadow: -2px 2px 2px var(--dark-gray);
+}
 
+.contact p, .contact span{
+    text-align: center;
+    padding:1rem;
+    font-family: cursive;
+    font-weight: 600;
+    color: var(--dark-gray2);
+    font-size: 1.2rem;
 
+}
 
 /** Footer */
 .footer {
@@ -370,7 +391,7 @@ tbody, td, tfoot, th, thead, tr {
 @media (min-width: 768px){
     .background {
         position: relative;
-        background: radial-gradient(rgba(217, 4, 39, 0.24), rgba(226, 218, 221, 0.288)), url('../assets/img/fondo-body3.webp');
+        background: radial-gradient( rgba(226, 218, 221, 0.288),rgba(217, 4, 39, 0.171)), url('../assets/img/fondo-body3.webp');
         filter: contrast(1.1);
         background-attachment: fixed;
         z-index: 1;
@@ -462,13 +483,12 @@ tbody, td, tfoot, th, thead, tr {
         font-size: 0.9rem !important;
     }
 
-    /** FForm-contact */
+    /** Form-contact */
     
-
     .form-content{
         width: 70vw;
-        margin: 10% auto !important;
-        background-color: var(--light-blue);
+        margin: 0.5rem auto !important;
+        background-color: var(--dark-gray2);
         font-weight: 600;
         font-size: 1.3rem;
         border-radius: var(--radius) !important;
@@ -482,7 +502,7 @@ tbody, td, tfoot, th, thead, tr {
     }
     
     .form-content label {
-        color: #F7F3F2;
+        color:var(--font-light-color);
     }
 
     .form-content button {
@@ -490,6 +510,14 @@ tbody, td, tfoot, th, thead, tr {
         margin-right: 4rem !important;
         font-weight: 600;
     }
-
     
+    .contact p, .contact span {
+        font-size: 1.3rem !important;
+        color: var(--dark-gray2);
+        background-color: rgba(248, 181, 181, 0.623);
+    }
+
+    .contact span{
+        margin-top: 1rem !important;
+    }
 }
