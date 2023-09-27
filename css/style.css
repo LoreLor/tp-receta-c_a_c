@@ -32,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 a{
@@ -225,6 +226,27 @@ header nav div h1 {
     padding-top: 1rem;
 }
 
+audio {
+    width: 100%; 
+    height: 20px;
+    color: #fff; 
+    margin-top: 0.8rem;
+    margin-left: -0.5rem;
+}
+
+/* Estilos para los controles de reproducción */
+audio::-webkit-media-controls-panel {
+    color: var(--font-light-color) /* Color de fondo personalizado para controles */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    color: #fff; 
+}
+
+
+/** Section Top Tips */
+
 .card {
     box-shadow: -2px 2px 2px var(--dark-gray);
     transition: var(--transition);
@@ -387,6 +409,8 @@ tbody, td, tfoot, th, thead, tr {
 
 
 
+
+
 /** Media Queries */
 @media (min-width: 768px){
     .background {
@@ -470,7 +494,7 @@ tbody, td, tfoot, th, thead, tr {
 
     .aside-content li {
         font-weight: 300;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         letter-spacing: 2px;
         color: var(--font-light-color);
     }
