@@ -393,14 +393,13 @@ tbody, td, tfoot, th, thead, tr {
 
 /** Flecha a Home */
 .go-up a{
-    position: fixed;;
     display: flex;
     justify-content: end;
     font-size: 2.5rem;
     right: 0.5rem;
     bottom: 0;
     color: var(--dark-tomato);
-    z-index: 1;
+    z-index: 2000;
 }
 
 .go-up a:hover {
