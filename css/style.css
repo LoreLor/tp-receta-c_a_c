@@ -26,6 +26,7 @@
 body {
     box-sizing: border-box;
     background-color: var(--light-tomato);
+    position: relative;
 }
 
 .container-fluid {
@@ -41,6 +42,7 @@ a{
 
 main{
     flex-grow: 1;
+    position: relative;
 }
 
 /** Section Header */
@@ -392,19 +394,13 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 /** Flecha a Home */
-.go-up a{
-    position: fixed;;
-    display: flex;
-    justify-content: end;
+.go-up a {
     font-size: 2.5rem;
-    right: 0.5rem;
-    bottom: 0;
     color: var(--dark-tomato);
-    z-index: 1;
 }
 
 .go-up a:hover {
-    color: rgb(167, 217, 248);
+    color: rgba(2, 22, 34, 0.5);
 }
 
 
@@ -473,9 +469,9 @@ tbody, td, tfoot, th, thead, tr {
     }
    
     .go-up a{
-        right: 2rem;
-        font-size: 2.5rem;
-        bottom: 0rem;
+        font-size: 3rem;
+        margin-bottom: 13rem;
+        margin-right: 2rem;
     }
 
     .item > figcaption{
